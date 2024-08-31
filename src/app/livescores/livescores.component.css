@@ -1,0 +1,42 @@
+.match-container {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .match-container h2 {
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .match-container p {
+    margin-bottom: 10px;
+  }
+  
+  .match-container span {
+    margin-right: 20px;
+  }
+  
+  .match-container a {
+    text-decoration: none;
+    color: #337ab7;
+  }
+  
+  .match-container a:hover {
+    color: #23527c;
+  }
+  
+  .match-container .scores span {
+    margin-right: 10px;
+  }
+  
+  .match-container .odds span {
+    margin-right: 10px;
+  }
+  
+  .match-container .urls a {
+    margin-right: 10px;
+  }

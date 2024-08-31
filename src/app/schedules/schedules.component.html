@@ -1,0 +1,27 @@
+<h2><a routerLink="/laliga">Click here for Next matches</a></h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Rank</th>
+      <th>Team</th>
+      <th>Points</th>
+      <th>Matches</th>
+      <th>Goal Difference</th>
+      <th>Goals Scored</th>
+      <th>Goals Conceded</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let team of leagueTable">
+      <td>{{ team.rank }}</td>
+    
+      <td>{{team.name}}</td>
+      <td>{{ team.points }}</td>
+      <td>{{ team.matches }}</td>
+      <td>{{ team.goal_diff }}</td>
+      <td>{{ team.goals_scored }}</td>
+      <td>{{ team.goals_conceded }}</td>
+    </tr>
+  </tbody>
+</table>

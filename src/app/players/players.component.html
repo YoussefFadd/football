@@ -1,0 +1,20 @@
+<!-- players.component.html -->
+<div class="players-container">
+  <h2>Live Matches</h2>
+  <a routerLink="/livematches">next Matches</a>
+  <ul>
+    <li *ngFor="let match of liveMatches">
+      <span>Country: {{ match.country.name }} ({{ match.country.flag }})</span>
+      <span>Home Team: {{ match.home.name }} ({{ match.home.logo }})</span>
+      <span>Away Team: {{ match.away.name }} ({{ match.away.logo }})</span>
+      <span>Score: {{ match.scores.score }}</span>
+      <span>Scheduled: {{ match.scheduled }}</span>
+      <span>Competition: {{ match.competition.name }}</span>
+      <span>Odds: 
+        <span>Live: {{ match.odds.live['1'] }} (Home), {{ match.odds.live['2'] }} (Away), {{ match.odds.live.X }} (Draw)</span>
+        <span>Pre: {{ match.odds.pre['1'] }} (Home), {{ match.odds.pre['2'] }} (Away), {{ match.odds.pre.X }} (Draw)</span>
+      </span>
+    </li>
+  </ul>
+  
+</div>

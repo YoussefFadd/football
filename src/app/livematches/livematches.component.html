@@ -1,0 +1,19 @@
+<div class="container">
+  <h2>Live Matches</h2>
+  <div *ngIf="errorMessage" class="alert alert-danger">
+    {{ errorMessage }}
+  </div>
+
+  <div *ngIf="matches.length > 0">
+    <ul class="list-group">
+      <li *ngFor="let match of matches" class="list-group-item">
+        <h5>{{ match.home.name }} vs {{ match.away.name }}</h5>
+        <p>Location: {{ match.location }}</p>
+        <p>Scheduled Time: {{ match.scheduled }}</p>
+        <p>Competition: {{ match.competition.name }}</p>
+        <p>Status: {{ match.status }}</p>
+        <p>Score: {{ match.scores.score }}</p>
+      </li>
+    </ul>
+  </div>
+</div>

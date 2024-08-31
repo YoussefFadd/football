@@ -1,0 +1,40 @@
+.players-container {
+    max-width: 800px; /* adjust the width as needed */
+    margin: 40px auto; /* add some margin top and bottom, and center horizontally */
+    padding: 20px; /* add some padding around the container */
+    background-color: #f9f9f9; /* add a light gray background color */
+    border: 1px solid #ddd; /* add a light gray border */
+    border-radius: 10px; /* add a slight border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* add a slight box shadow */
+    text-align: center; /* center all the text inside the container */
+  }
+  
+  .players-container h2 {
+    margin-top: 0; /* remove the default margin top of the h2 element */
+  }
+  
+  .players-container ul {
+    list-style: none; /* remove the default list style */
+    padding: 0; /* remove the default padding of the ul element */
+    margin: 0; /* remove the default margin of the ul element */
+  }
+  
+  .players-container li {
+    margin-bottom: 20px; /* add some margin bottom to each list item */
+    padding: 20px; /* add some padding around each list item */
+    border-bottom: 1px solid #ddd; /* add a light gray border bottom */
+  }
+  
+  .players-container li:last-child {
+    border-bottom: none; /* remove the border bottom of the last list item */
+  }
+  
+  .players-container span {
+    display: block; /* make each span element a block element */
+    margin-bottom: 10px; /* add some margin bottom to each span element */
+  }
+  
+  .players-container span span {
+    display: inline-block; /* make the nested span elements inline-block */
+    margin-right: 20px; /* add some margin right to each nested span element */
+  }

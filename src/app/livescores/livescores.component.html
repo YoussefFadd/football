@@ -1,0 +1,20 @@
+<div *ngFor="let match of liveMatches">
+  <h2>{{ match.competition.name }} - {{ match.home.name }} vs {{ match.away.name }}</h2>
+  <p>Country: {{ match.country.name }} ({{ match.country.flag }})</p>
+  <p>Competition: {{ match.competition.name }} (Tier {{ match.competition.tier }})</p>
+  <p>Scheduled: {{ match.scheduled }} - {{ match.time }}</p>
+  <p>Status: {{ match.status }}</p>
+  <p>Home Team: {{ match.home.name }} ({{ match.home.stadium }})</p>
+  <p>Away Team: {{ match.away.name }} ({{ match.away.stadium }})</p>
+  <p>Scores:
+    <span>Full Time: {{ match.scores.ft_score }}</span>
+    <span>Half Time: {{ match.scores.ht_score }}</span>
+    <span>Extra Time: {{ match.scores.et_score }}</span>
+    <span>Penalty Shootout: {{ match.scores.ps_score }}</span>
+  </p>
+  <p>Odds:
+    <span>Live: {{ match.odds.live['1'] }} - {{ match.odds.live['2'] }} - {{ match.odds.live.X }}</span>
+    <span>Pre: {{ match.odds.pre['1'] }} - {{ match.odds.pre['2'] }} - {{ match.odds.pre.X }}</span>
+  </p>
+ 
+</div>

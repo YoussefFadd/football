@@ -1,0 +1,17 @@
+<div *ngIf="apiResponse">
+    <h2>Matches</h2>
+    <ul>
+      <li *ngFor="let match of apiResponse.data.fixtures">
+        <h3>{{ match.home_name }} vs {{ match.away_name }}</h3>
+        <p>Competition: {{ match.competition.name }}</p>
+        <p>Date: {{ match.date }}</p>
+        <p>Time: {{ match.time }} Argentina Time</p>
+        <p>Location: {{ match.location }}</p>
+       
+      </li>
+    </ul>
+  </div>
+  
+  <div *ngIf="!apiResponse">
+    <p>No matches found</p>
+  </div>
